@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlindNav - Navegação Acessível Premium</title>
+  <meta name="description" content="Plataforma de navegação urbana acessível para pessoas com deficiência visual">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="icon-192x192.png">
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <div class="header-bg"></div>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div class="crown-icon"></div>
+          <h1 class="brand-logo">BLINDNAV</h1>
+        </div>
+        
+        <div class="nav-menu" id="nav-menu">
+          <a href="#funcionalidades" class="nav-link">FUNCIONALIDADES</a>
+          <a href="#download" class="nav-link">DOWNLOAD</a>
+          <a href="#equipe" class="nav-link">EQUIPE</a>
+          <a href="#app" class="nav-link cta-link">USAR APP</a>
+        </div>
+        
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h2 class="hero-subtitle">NAVEGAÇÃO URBANA ACESSÍVEL</h2>
+        <h1 class="hero-title">PRECISÃO <br>EM CADA PASSO</h1>
+        <div class="separator"></div>
+        <p class="hero-description">
+          Tecnologia avançada de navegação para pessoas com deficiência visual. 
+          Comandos de voz, detecção de obstáculos e navegação inteligente em tempo real.
+        </p>
+        
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="scrollToApp()">
+            EXPERIMENTAR AGORA
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="funcionalidades" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-subtitle">FUNCIONALIDADES</h2>
+        <h1 class="section-title">TECNOLOGIA DE PONTA</h1>
+        <div class="separator"></div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span>👁️</span>
+          </div>
+          <h3 class="feature-title">DETECÇÃO DE OBSTÁCULOS</h3>
+          <div class="feature-separator"></div>
+          <p class="feature-description">
+            Sistema inteligente que identifica obstáculos, degraus, postes e irregularidades 
+            no caminho com precisão e feedback sonoro imediato.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span>🎤</span>
+          </div>
+          <h3 class="feature-title">COMANDOS DE VOZ</h3>
+          <div class="feature-separator"></div>
+          <p class="feature-description">
+            Controle total por voz em português brasileiro. Pergunte sobre localização, 
+            arredores, navegação e receba respostas detalhadas.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span>🗺️</span>
+          </div>
+          <h3 class="feature-title">NAVEGAÇÃO INTELIGENTE</h3>
+          <div class="feature-separator"></div>
+          <p class="feature-description">
+            Rotas otimizadas considerando acessibilidade, transporte público e 
+            condições em tempo real para uma navegação segura.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span>🔊</span>
+          </div>
+          <h3 class="feature-title">FEEDBACK SONORO</h3>
+          <div class="feature-separator"></div>
+          <p class="feature-description">
+            Text-to-speech avançado com instruções claras, alertas de segurança 
+            e descrições detalhadas do ambiente.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span>📱</span>
+          </div>
+          <h3 class="feature-title">INTERFACE ACESSÍVEL</h3>
+          <div class="feature-separator"></div>
+          <p class="feature-description">
+            Design de alto contraste, navegação por teclado, suporte a leitores 
+            de tela e elementos grandes para facilitar o uso.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span>⚡</span>
+          </div>
+          <h3 class="feature-title">TEMPO REAL</h3>
+          <div class="feature-separator"></div>
+          <p class="feature-description">
+            Informações atualizadas sobre transporte público, condições climáticas 
+            e alertas de segurança para decisões informadas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="download-section">
+    <div class="download-bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-subtitle">APLICATIVO</h2>
+        <h1 class="section-title">DOWNLOAD</h1>
+        <div class="separator"></div>
+      </div>
+      
+      <div class="download-content">
+        <div class="download-info">
+          <h2 class="download-title">BLINDNAV MOBILE</h2>
+          <p class="download-description">
+            Tenha acesso completo às funcionalidades do BlindNav no seu dispositivo móvel. 
+            Navegação offline, sincronização em nuvem e recursos exclusivos.
+          </p>
+          
+          <div class="download-features">
+            <div class="download-feature">
+              <span class="feature-check">✓</span>
+              <span>Funcionalidade offline completa</span>
+            </div>
+            <div class="download-feature">
+              <span class="feature-check">✓</span>
+              <span>Sincronização automática</span>
+            </div>
+            <div class="download-feature">
+              <span class="feature-check">✓</span>
+              <span>Notificações inteligentes</span>
+            </div>
+            <div class="download-feature">
+              <span class="feature-check">✓</span>
+              <span>Suporte a wearables</span>
+            </div>
+          </div>
+
+          <div class="download-buttons">
+            <button class="download-btn android-btn" disabled>
+              <div class="btn-content">
+                <span class="btn-icon">📱</span>
+                <div class="btn-text">
+                  <span class="btn-label">Baixar para</span>
+                  <span class="btn-platform">Android</span>
+                </div>
+              </div>
+              <span class="coming-soon">Em breve</span>
+            </button>
+            
+            <button class="download-btn ios-btn" disabled>
+              <div class="btn-content">
+                <span class="btn-icon">🍎</span>
+                <div class="btn-text">
+                  <span class="btn-label">Baixar para</span>
+                  <span class="btn-platform">iOS</span>
+                </div>
+              </div>
+              <span class="coming-soon">Em breve</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="download-visual">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="app-preview">
+                <!-- Espaço para screenshot do app -->
+                <div class="app-placeholder">
+                  <span class="placeholder-icon">📱</span>
+                  <p>Preview do App</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="equipe" class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-subtitle">CRIADORES</h2>
+        <h1 class="section-title">NOSSA EQUIPE</h1>
+        <div class="separator"></div>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-photo">
+            <!-- Espaço para foto do Renan -->
+            <div class="photo-placeholder">
+              <span class="photo-initial">R</span>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">RENAN</h3>
+            <p class="member-role">Desenvolvedor Frontend</p>
+            <div class="member-separator"></div>
+            <p class="member-description">Especialista em interfaces acessíveis e experiência do usuário</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="member-photo">
+            <!-- Espaço para foto do Murilo -->
+            <div class="photo-placeholder">
+              <span class="photo-initial">M</span>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">MURILO</h3>
+            <p class="member-role">Desenvolvedor Backend</p>
+            <div class="member-separator"></div>
+            <p class="member-description">Arquiteto de sistemas e integração de APIs em tempo real</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="member-photo">
+            <!-- Espaço para foto do Matheus -->
+            <div class="photo-placeholder">
+              <span class="photo-initial">ME</span>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">MATHEUS EVANGELISTA</h3>
+            <p class="member-role">Especialista em IA</p>
+            <div class="member-separator"></div>
+            <p class="member-description">Desenvolvimento de algoritmos de detecção e processamento de voz</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="member-photo">
+            <!-- Espaço para foto do Felipe -->
+            <div class="photo-placeholder">
+              <span class="photo-initial">F</span>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">FELIPE</h3>
+            <p class="member-role">Designer UX/UI</p>
+            <div class="member-separator"></div>
+            <p class="member-description">Design centrado no usuário e pesquisa em acessibilidade</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="member-photo">
+            <!-- Espaço para foto do João Pedro -->
+            <div class="photo-placeholder">
+              <span class="photo-initial">JP</span>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">JOÃO PEDRO</h3>
+            <p class="member-role">Gerente de Projeto</p>
+            <div class="member-separator"></div>
+            <p class="member-description">Coordenação de equipe e estratégia de desenvolvimento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Section -->
+  <section id="app" class="app-section">
+    <div class="app-bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-subtitle">EXPERIMENTE</h2>
+        <h1 class="section-title">BLINDNAV</h1>
+        <div class="separator"></div>
+        
+        <div class="status-indicators">
+          <div class="status-item">
+            <span class="status-icon">📍</span>
+            <span id="location-status" class="status-text">Localizando...</span>
+          </div>
+          <button id="toggle-audio" class="audio-toggle" aria-label="Alternar áudio">
+            <span id="audio-icon" class="audio-icon">🔊</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Controls -->
+      <div class="app-controls">
+        <div class="control-card primary-control">
+          <div class="control-header">
+            <h3 class="control-title">DETECÇÃO DE OBSTÁCULOS</h3>
+            <p class="control-subtitle">Identifique obstáculos ao seu redor</p>
+          </div>
+          
+          <button id="detect-obstacles" class="control-button detect-btn">
+            <span class="button-icon">👁️</span>
+            <span id="detect-text" class="button-text">INICIAR DETECÇÃO</span>
+          </button>
+          
+          <p class="control-description">
+            Pressione para ativar a detecção inteligente de obstáculos com feedback sonoro detalhado
+          </p>
+        </div>
+
+        <div class="control-card secondary-control">
+          <div class="control-header">
+            <h3 class="control-title">COMANDOS DE VOZ</h3>
+            <p class="control-subtitle">Controle por voz inteligente</p>
+          </div>
+          
+          <button id="voice-command" class="control-button voice-btn">
+            <span class="button-icon">🎤</span>
+            <span id="voice-text" class="button-text">ATIVAR VOZ</span>
+          </button>
+          
+          <p class="control-description">
+            Use comandos de voz em português para navegar e obter informações do ambiente
+          </p>
+        </div>
+      </div>
+
+      <!-- Status Dashboard -->
+      <div class="status-dashboard">
+        <h3 class="dashboard-title">STATUS DO SISTEMA</h3>
+        
+        <div class="status-grid">
+          <div class="status-card">
+            <div class="status-icon-wrapper">
+              <span class="status-emoji">🌍</span>
+            </div>
+            <div class="status-info">
+              <p class="status-label">Localização</p>
+              <p id="location-value" class="status-value">Carregando...</p>
+            </div>
+          </div>
+          
+          <div class="status-card">
+            <div class="status-icon-wrapper">
+              <span class="status-emoji">🔊</span>
+            </div>
+            <div class="status-info">
+              <p class="status-label">Sistema de Áudio</p>
+              <p id="audio-value" class="status-value">Habilitado</p>
+            </div>
+          </div>
+          
+          <div class="status-card">
+            <div class="status-icon-wrapper">
+              <span class="status-emoji">🛡️</span>
+            </div>
+            <div class="status-info">
+              <p class="status-label">Detecção</p>
+              <p id="detection-value" class="status-value">Standby</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="last-command-container" class="command-display hidden">
+          <div class="command-header">
+            <span class="command-icon">💬</span>
+            <p class="command-label">Último Comando:</p>
+          </div>
+          <p id="last-command-value" class="command-text"></p>
+        </div>
+      </div>
+
+      <!-- Quick Commands -->
+      <div class="quick-commands">
+        <h3 class="commands-title">COMANDOS RÁPIDOS</h3>
+        
+        <div class="commands-grid">
+          <button class="quick-command-btn" data-command="onde estou">
+            <span class="quick-icon">📍</span>
+            <span class="quick-text">"Onde estou?"</span>
+          </button>
+          
+          <button class="quick-command-btn" data-command="descrever arredores">
+            <span class="quick-icon">🔍</span>
+            <span class="quick-text">"Descrever arredores"</span>
+          </button>
+          
+          <button class="quick-command-btn" data-command="repetir">
+            <span class="quick-icon">🔄</span>
+            <span class="quick-text">"Repetir instrução"</span>
+          </button>
+          
+          <button class="quick-command-btn" data-command="ajuda">
+            <span class="quick-icon">❓</span>
+            <span class="quick-text">"Ajuda"</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 class="footer-title">BLINDNAV</h3>
+          <p class="footer-description">
+            Navegação urbana acessível para todos. Feira de Ciências 2025.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4 class="link-title">PRODUTO</h4>
+            <a href="#funcionalidades" class="footer-link">Funcionalidades</a>
+            <a href="#download" class="footer-link">Download</a>
+            <a href="#app" class="footer-link">Usar App</a>
+          </div>
+          
+          <div class="link-group">
+            <h4 class="link-title">EQUIPE</h4>
+            <a href="#equipe" class="footer-link">Desenvolvedores</a>
+            <a href="#" class="footer-link">Contato</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 BlindNav. Desenvolvido com precisão para acessibilidade.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Registrar Service Worker para PWA
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registrado com sucesso:', registration);
+          })
+          .catch(error => {
+            console.log('Falha ao registrar Service Worker:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
